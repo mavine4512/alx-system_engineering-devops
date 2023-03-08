@@ -18,4 +18,4 @@ mv [[:upper:]]* /tmp/u :Create a script that moves all files beginning with an u
 rm *~ : Delete all files
 mkdir -p welcome/to/school: creates the directories  in the current directory.You are only allowed to use two spaces (and lines) in your script, not more
 ls -xamp : command that lists all the files and directories of the current directory, separated by commas (,).
- 
+!:mime School : detect data in a file  
