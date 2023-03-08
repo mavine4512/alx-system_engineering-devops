@@ -8,4 +8,5 @@ ls -lna : display current directory contents numerically and also hidden files
 mkdir : how to create directory
 mv : move file
 rm : to delete a file
-rm -r :To delete a directory 
+rm -r :To delete a directory
+cd - :Change working directory 
