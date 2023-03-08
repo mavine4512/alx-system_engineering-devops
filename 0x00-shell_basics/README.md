@@ -16,4 +16,6 @@ ln -s :symbolic link
 cp -un *.html ../ : copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory
 mv [[:upper:]]* /tmp/u :Create a script that moves all files beginning with an uppercase letter to the directory
 rm *~ : Delete all files
-mkdir -p welcome/to/school: creates the directories  in the current directory.You are only allowed to use two spaces (and lines) in your script, not more 
+mkdir -p welcome/to/school: creates the directories  in the current directory.You are only allowed to use two spaces (and lines) in your script, not more
+ls -xamp : command that lists all the files and directories of the current directory, separated by commas (,).
+ 
