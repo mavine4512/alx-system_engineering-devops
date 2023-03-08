@@ -7,3 +7,4 @@ ls -al : Display current directory contents, including hidden files (starting wi
 ls -lna : display current directory contents numerically and also hidden files
 mkdir : how to create directory
 mv : move file
+rm : to delete a file 
