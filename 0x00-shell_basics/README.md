@@ -17,5 +17,8 @@ cp -un *.html ../ : copies all the HTML files from the current working directory
 mv [[:upper:]]* /tmp/u :Create a script that moves all files beginning with an uppercase letter to the directory
 rm *~ : Delete all files
 mkdir -p welcome/to/school: creates the directories  in the current directory.You are only allowed to use two spaces (and lines) in your script, not more
-file -m school.magic : command that lists all the files and directories of the current directory, separated by commas (,).
-!:mime School : detect data in a file  
+
+
+0  string SCHOOL School data
+!:mime School: detect a file 
+file -C -m school.mgc : command that lists all the files and directories of the current directory, separated by commas (,).  
