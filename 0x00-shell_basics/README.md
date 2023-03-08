@@ -5,3 +5,4 @@ cd~ : change working directory to user's home
 ls -l : list information abot files and directories whin the file system
 ls -al : Display current directory contents, including hidden files (starting with .)
 ls -lna : display current directory contents numerically and also hidden files
+mkdir : how to create directory
