@@ -6,7 +6,7 @@ while [ $i -le 10 ]
 do
         if [ $i -eq 4 ]
         then
-             echo "bad lusk"
+             echo "bad luck"
         elif [ $i -eq 8 ]
         then
                 echo "good luck"
