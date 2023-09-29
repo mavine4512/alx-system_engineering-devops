@@ -21,12 +21,12 @@ int infinite_while(void)
  */
 int main(void)
 {
-	int i
-		pid_t zombie;
+	int i;
+	pid_t zombie;
 
 	for (i = 0; i < 5; i++)
 	{
-		zombie = fork()
+		zombie = fork();
 			if (!zombie)
 				return (0);
 		printf("zombie process created, PID: %d\n", zombie);
