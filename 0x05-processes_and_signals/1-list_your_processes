@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Dislay current running process
+
+ps auxf
