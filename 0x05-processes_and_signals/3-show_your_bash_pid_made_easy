@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Disp PID with process name
 
-pgrep -l bash
+pgrep -flx ".*bash.*"
