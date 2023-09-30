@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Dislay current running process
-
-ps auxf
+# Dislay a list of  current running process for all users
+# In a user-oriented format according to their process hierarchy
+ps -faux
