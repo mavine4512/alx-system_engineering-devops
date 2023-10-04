@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays listening sockets with the PIO and name of the program to which each socket is connected
+
+netstart -lp
