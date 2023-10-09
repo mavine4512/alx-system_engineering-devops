@@ -2,6 +2,7 @@
 # This script configures an Ubuntu server as follows:
 # **** localhost resolves to 127.0.0.2
 # **** facebook.com resolves to 8.8.8.8
+# Remaps IPV4 addresses to hostnames
 hosts_tmp=~/hosts.new
 cp /etc/hosts "$hosts_tmp"
 sed --quiet -i -E 's/(([0-9]+\.?){4}\slocalhost)/# \1/g' "$hosts_tmp"
