@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script disables all active IPv4 addresses on the machine.
-
+# ip address '([0-9])
 ifconfig | grep -oE 'inet [0-9]+(\.[0-9]+){3}' | cut -f2 -d ' '
