@@ -1,5 +1,5 @@
-# Exwcutes a bash command
-exac { 'kill':
- command => 'pkill -f killmenow',
- path	 => ['usr/bin', '/usr/sbin']
+# Executes a bash command
+exec { 'kill':
+  command => 'pkill -f killmenow',
+  path	  => ['/usr/bin', '/usr/sbin']
 }
