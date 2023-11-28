@@ -15,4 +15,4 @@ string_for_replacement="listen 80 default_server;\n\terror_page 404 \/404.html;\
 sudo sed -i "s/listen 80 default_server;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
 #restart the server
-sudo server nginx restart
+sudo service nginx restart
