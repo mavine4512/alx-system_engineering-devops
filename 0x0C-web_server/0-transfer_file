@@ -10,7 +10,7 @@ server_ip="$2"
 username="$3"
 ssh_key="$4"
 
-if scp -o StrictKeyChecking=no -i "$ssh_key" "$file_path" "$username@$server_ip:~/"; then
+if scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_path" "$username@$server_ip:~/"; then
 	echo "$file_path transferred successfully."
 else
 	echo "File transfer failed."
