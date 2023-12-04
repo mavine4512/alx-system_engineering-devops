@@ -13,7 +13,7 @@ frontend lawrence-frontend
 	default_backend lawrence-backend
 backend lawrence-backend
 	balance roundrobin
-	server 339043-web-01 34.232.52.236:80 check
+	server 339043-web-01 54.160.67.249:80 check
 	server 339043-web-02 34.207.63.31:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
