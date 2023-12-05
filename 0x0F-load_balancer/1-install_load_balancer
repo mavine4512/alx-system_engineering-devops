@@ -10,11 +10,11 @@ server_config=\
 frontend lawrence-frontend
 	bind *:80
 	mode http
-	default_backend lawrence-backend
-backend lawrence-backend
+	default_backend mavine-backend
+backend mavine-backend
 	balance roundrobin
-	server 339043-web-01 54.160.67.249:80 check
-	server 339043-web-02 34.207.63.31:80 check
+	server 329062-web-01 54.160.67.249:80 check
+	server 329062-web-02 34.207.63.31:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
