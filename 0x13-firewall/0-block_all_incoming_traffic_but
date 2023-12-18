@@ -1,7 +1,7 @@
 # update the system and install ufw
 sudo apt update -y
 sudo apt install ufw -y
-sudo ufw default deny incoming -y # block incoming signals
+sudo ufw default deny incoming -y # block all incoming signals
 sudo ufw default allow outgoing -y # allow all outgoing signals
 
 # allow ports 22, 443, and 80
