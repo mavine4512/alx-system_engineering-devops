@@ -10,7 +10,8 @@
 
 # Adding this line to forward all requests from port 8080 to port 80
 *nat
-:PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+:PREROUTING ACCEPT [0:0]
+-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
 COMMIT
 # end of my additions
 
