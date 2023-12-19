@@ -38,13 +38,13 @@ COMMIT
 -A ufw-before-input -m conntrack --ctstate INVALID -j DROP
 
 # ok icmp code for INPUT
--A ufw-before-input -p icmp --icmp-type destination-ureachable -j ACCEPT
+-A ufw-before-input -p icmp --icmp-type destination-unreachable -j ACCEPT
 -A ufw-before-input -p icmp --icmp-type time-exceeded -j ACCEPT
 -A ufw-before-input -p icmp --icmp-type parameter-problem -j ACCEPT
 -A ufw-before-input -p icmp --icmp-type echo-request -j ACCEPT
 
 # ok icmp code for FORWARD
--A ufw-before-forward -p icmp --icmp-type destination-ureachable -j ACCEPT
+-A ufw-before-forward -p icmp --icmp-type destination-unreachable -j ACCEPT
 -A ufw-before-forward -p icmp --icmp-type time-exceeded -j ACCEPT
 -A ufw-before-forward -p icmp --icmp-type parameter-problem -j ACCEPT
 -A ufw-before-forward -p icmp --icmp-type echo-request -j ACCEPT
