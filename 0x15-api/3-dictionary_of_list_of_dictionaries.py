@@ -10,7 +10,7 @@ if __name__ == '__main__':
     url = "https://jsonplaceholder.typicode.com/users"
 
     response = requests.get(url)
-    usrs = response.json()
+    users = response.json()
 
     dictionary = {}
     for user in users:
@@ -19,7 +19,7 @@ if __name__ == '__main__':
         url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
         url = url + '/todos/'
         response = requests.get(url)
-        task = response.json()
+        tasks = response.json()
         dictionary[user_id] = []
         for task in tasks:
             dictionary[user_id].append({
