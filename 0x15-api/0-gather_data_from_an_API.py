@@ -25,7 +25,7 @@ if __name__ == '__main__':
             done += 1
 
     print("Employee {} is done with tasks({}/{}):"
-            .format(employeeName, done, len(tasks)))
+          .format(employeeName, done, len(tasks)))
 
     for task in done_tasks:
         print("\t {}".format(task.get('title')))
