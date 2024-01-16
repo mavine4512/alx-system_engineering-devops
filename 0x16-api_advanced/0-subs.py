@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Namber of subscribers for a given subreddit
+number of subscribers for a given subreddit
 """
 
 from requests import get
@@ -14,7 +14,7 @@ def number_of_subscribers(subreddit):
 
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {
-            "User-Agent": "YourUserAgent"
+        "User-Agent": "YourUserAgent"
         }
     response = get(url, headers=headers)
     if response.status_code == 200:
