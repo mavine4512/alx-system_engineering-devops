@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Displays the headings of the initial 10 trending posts feature within
 a specified subreddit.
