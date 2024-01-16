@@ -27,7 +27,7 @@ def count_words(subreddit, word_list, hot_list=None, after=None):
                 title = post['data']['title'].lower()
                 hot_list.append(title)
 
-            after  = data['data']['after']
+            after = data['data']['after']
 
             if after is not None:
                 return count_words(subreddit, word_list, hot_list, after)
@@ -44,8 +44,8 @@ def count_words(subreddit, word_list, hot_list=None, after=None):
                 sorted_word_counts = sorted(
                         word_counts.items(), key=lambda x: (-x[1], x[0]))
                 for word, count in sorted_word_counts:
-                if count > 0:
-                    print(f"{word}: {count}")
+                    if count > 0:
+                        print(f"{word}: {count}")
 
         else:
             return
