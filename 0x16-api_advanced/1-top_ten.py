@@ -13,15 +13,15 @@ def top_ten(subreddit):
     10 hot posts listed for a given subreddit
     """
 
-     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {
-            "User-Agent": "YourUserAgent"
+        "User-Agent": "YourUserAgent"
         }
     response = get(url, headers=headers)
-    if response.state_code == 200:
+    if response.status_code == 200:
         data =  response.json()
         if 'data' in data and 'children' in data['data']:
-            post = data['data']['children']
+            posts = data['data']['children']
             for post in posts:
                 title = post['data']['title']
                 print(title)
