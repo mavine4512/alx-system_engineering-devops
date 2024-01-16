@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" reddit api """
 
 from collections import Counter
 import requests
@@ -14,9 +15,9 @@ def count_words(subreddit, word_list, hot_list=None, after=None):
     if after:
         url += "&after={}".format(after)
     headers = {
-            "User-Agent": "YourUserAgent"
+        "User-Agent": "YourUserAgent"
         }
-    response = get(url, headers=headers)
+    request = request.get(url, headers=headers)
 
     if request.status_code == 200:
         data = request.json()
@@ -33,7 +34,7 @@ def count_words(subreddit, word_list, hot_list=None, after=None):
             else:
                 # Combine the hot_list into a single string for word counting
                 all_title = ' '.join(hot_list)
-                word_counter = Counter(all_title.split())
+                word_counter = Counter(all_titles.split())
                 word_counts = {}
 
                 for word in word_list:

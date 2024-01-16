@@ -20,7 +20,7 @@ def recurse(subreddit, hot_list=[]):
         if after_data is not None:
             after = after_dat
             recurse(subreddit, hot_list)
-        all_title = results.json().get("data").get("children")
+        all_titles = results.json().get("data").get("children")
         for title_ in all_titles:
             hot_list.append(title_.get("data").get("title"))
         return hot_list
